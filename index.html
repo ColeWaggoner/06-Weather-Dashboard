@@ -16,16 +16,41 @@
 
 
 <body>
-  <main>
+
+<!-- header -->
+
     <header class = 'container-flex'>
-      <h1 class = 'text-center bg-primary'>
+      <h1 class = 'text-center bg-secondary text-light p-3'>
         <strong>Yo, What's the Weather?</strong>
       </h1>
     </header>
 
+  <main>
+
+<!-- Container for search and daily weather cards -->
+
+    <div class="main container">
+
+      <!-- set up a row to make columns -->
+      <div class="row">
+       
+        <!-- Search box -->
+
+        <div class="col col-3">
+          <div class="search-box">
+            <h3 class="box-title">Search for a City:</h3>
+
+            <!-- Input and button prompts -->
+            <form>
+              <input id="cityName" class="form-control" list="datalistOptions" placeholder="Tampa Bay">
+              <button id="search" type="button" class="btn btn-primary mt-3">Search</button>
+            </form>
 
 
-
+            <!-- list to append previous searches -->
+            <ul class = 'search-history'></ul>
+          </div>
+        </div>
 
 
 
