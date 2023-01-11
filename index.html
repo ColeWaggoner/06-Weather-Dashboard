@@ -29,7 +29,7 @@
 
 <!-- Container for search and daily weather cards -->
 
-    <div class="main container">
+    <div class="main container-fluid">
 
       <!-- set up a row to make columns -->
       <div class="row">
@@ -51,6 +51,26 @@
             <ul class = 'search-history'></ul>
           </div>
         </div>
+
+        <!-- today's and upcoming weather column -->
+        <div class="col col-md-8">
+          <div id="city" class="card p-3">
+
+            <!-- span to hold entered information -->
+            <h2 class = 'mb-4'><span id="card-city"></span> <span id="card-date"></span></h2>
+
+
+              <p>Temp:</p>
+              <span id="temp"></span>
+              <p>Wind:</p>
+              <span id="wind"></span>
+              <p>Humidity:</p>
+              <span id="humidity"></span>
+          </div>
+
+          
+         
+  
 
 
 
